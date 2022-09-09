@@ -47,3 +47,10 @@ The database used in the project is MongoDB Atlas which is a cloud MongoDB datab
 You can find the Database URI in `.env.local` file as an environment variable `MONGODB_URI`.
 
 By using this database URI, the database can be accessed via MongoDB compass or on the cloud.
+
+### Demo credentials
+
+In order to login to the app, you can use the following credentials.
+
+Email : test@gmail.com
+Password: test123
