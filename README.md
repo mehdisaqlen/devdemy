@@ -1,3 +1,5 @@
+<img src="./public/logo.svg"  width="20%" height="20%">
+
 # Devdemy - Free Coding Courses
 
 v1.0.0 - Test Phase (BC190205829, Saqlen Raza Mehdi)
