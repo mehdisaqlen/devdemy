@@ -1,0 +1,141 @@
+@import "./Variable.scss";
+.main {
+  background-color: #f9fafb;
+  padding: 15px;
+  height: 100vh;
+  padding-top: 150px;
+
+  .form {
+    max-width: 450px;
+    margin: auto;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .svg {
+        fill: $primary-color;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 3px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+
+      input {
+        width: 100%;
+        padding: 14px 40px 14px 15px;
+        font-size: 16px;
+        font-family: inherit;
+        border: 1px solid #d1d5db;
+        outline: none;
+        display: block;
+
+        &:focus {
+          border-color: transparent;
+          outline: 2px solid rgb(0, 91, 219);
+          outline-offset: 0px;
+        }
+
+        &:first-child {
+          border-top-left-radius: 0.375rem;
+          border-top-right-radius: 0.375rem;
+          border-bottom: 0px;
+
+          &:focus {
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+      .middleInput {
+        border-bottom: none;
+        &:focus {
+          position: relative;
+          z-index: 2;
+        }
+      }
+      .passwordContainer {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .password {
+          border-top-left-radius: 0rem;
+          border-top-right-radius: 0rem;
+          border-bottom-left-radius: 0.375rem;
+          border-bottom-right-radius: 0.375rem;
+          border-bottom: 1px solid #d1d5db;
+          &:focus {
+            position: relative;
+            z-index: 2;
+          }
+        }
+
+        .showPassword {
+          padding-left: 8px;
+          cursor: pointer;
+          border: none;
+          color: #aaacaf;
+          background-color: transparent;
+          font-size: 20px;
+          z-index: 9999;
+          position: absolute;
+          top: 30%;
+          right: 10px;
+        }
+      }
+    }
+
+    .submitButton {
+      padding: 14px 15px;
+      display: inline-block;
+      font-size: 14px;
+      font-family: inherit;
+      border: none;
+      outline: none;
+      width: 100%;
+      border-radius: 0.375rem;
+      margin-top: 20px;
+      font-weight: 600;
+      color: white;
+      background-color: $primary-color;
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+
+      &:hover {
+        background-color: rgb(0, 47, 165);
+      }
+      &:active,
+      &:focus {
+        outline-offset: 1px;
+        outline: 3px solid $primary-color;
+      }
+    }
+
+    .desc {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: left;
+
+      a {
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+  }
+}

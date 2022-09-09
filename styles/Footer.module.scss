@@ -1,0 +1,15 @@
+@import "./Variable.scss";
+.navContainer {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 0px 15px;
+  background-color: rgb(237, 237, 237);
+  padding: 25px 0px;
+  .footer {
+    max-width: 1300px;
+    margin: 0px auto;
+
+    .link {
+      color: $primary-color;
+    }
+  }
+}

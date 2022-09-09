@@ -1,0 +1,41 @@
+@import "./Variable.scss";
+.navContainer {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 0px 15px;
+  .navbar {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+
+    .brand {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: center;
+      font-weight: 700;
+      color: $primary-color;
+      font-size: 25px;
+      padding: 12px 0px;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+
+      li {
+        list-style: none;
+        a {
+          display: block;
+          padding: 15px 15px;
+          font-weight: 500;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

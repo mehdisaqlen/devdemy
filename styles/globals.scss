@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+@import "./Variable.scss";
+
+html,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+.title {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+
+/* Button Types */
+.fill {
+  background-color: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background-color: rgb(0, 47, 165);
+  }
+  &:active,
+  &:focus {
+    background-color: rgb(0, 39, 137);
+  }
+}
+
+.outline {
+  color: rgb(0, 81, 195) !important;
+  &:hover {
+    background-color: rgba(0, 55, 193, 0.219);
+  }
+  &:active,
+  &:focus {
+    background-color: rgba(0, 55, 193, 0.39);
+  }
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.disabledButton {
+  opacity: 0.6;
+  outline: none !important;
+  cursor: not-allowed !important;
+}
+
+.error {
+  color: red !important;
+  margin-bottom: 0px !important;
+  font-size: 14px !important;
+  text-align: left !important;
+  padding-top: 5px !important;
+}
+.success {
+  color: green !important;
+  margin-bottom: 0px !important;
+  font-size: 14px !important;
+  text-align: left !important;
+  padding-top: 5px !important;
+}

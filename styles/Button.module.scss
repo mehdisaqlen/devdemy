@@ -1,0 +1,26 @@
+@import "./Variable.scss";
+
+.btn {
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 16px !important;
+  font-family: inherit;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s all ease-in-out;
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 3px solid $primary-color;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    cursor: default;
+  }
+}
