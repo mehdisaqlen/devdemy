@@ -1,18 +1,160 @@
 import Link from "next/link";
+import Image from "next/image";
+import Container from "./Container";
 import styles from "../styles/Footer.module.scss";
 
-export default function Footer() {
+const Footer = () => {
+  let year = new Date().getFullYear();
+
   return (
-    <div className={styles.navContainer}>
-      <div className={styles.footer}>
-        <p>
-          Copyright{" "}
-          <Link href="/">
-            <a className={styles.link}>Devdemy</a>
-          </Link>{" "}
-          &copy; 2022
-        </p>
-      </div>
-    </div>
+    <>
+      <footer className={styles.footer}>
+        <Container>
+          <nav className={styles.footerNav}>
+            <div className={styles.col}>
+              <div className={styles.footerBrand}>
+                <Link href="/">
+                  <a className={styles.brand}>
+                    <Image
+                      src="/logo2.svg"
+                      width="120"
+                      height="120"
+                      alt="Logo"
+                      className={styles.logo}
+                    />
+                  </a>
+                </Link>
+
+                <ul className={styles.socialIcons}>
+                  <li>
+                    <Link href="https://www.facebook.com/wirelogs">
+                      <a>
+                        <Image
+                          src={"/images/icons/facebook.svg"}
+                          width={20}
+                          height={20}
+                          alt="facebook"
+                        />
+                        <span className={styles.label}>Facebook</span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <a>
+                        <Image
+                          src="/images/icons/instagram.svg"
+                          width={20}
+                          height={20}
+                          alt="instagram"
+                        />
+                        <span className={styles.label}>Instagram</span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <a>
+                        <Image
+                          src="/images/icons/youtube.svg"
+                          width={20}
+                          height={20}
+                          alt="youtube"
+                        />
+                        <span className={styles.label}>YouTube</span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <a>
+                        <Image
+                          src="/images/icons/twitter.svg"
+                          width={20}
+                          height={20}
+                          alt="twitter"
+                        />
+                        <span className={styles.label}>Twitter</span>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className={styles.col}>
+              <h2>Navigation</h2>
+              <ul>
+                <li>
+                  <Link href="#">
+                    <a>All Courses</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Frontend</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Backend</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Machine Learning</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Cybersecurity</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.col}>
+              <h2>Information</h2>
+              <ul>
+                <li>
+                  <Link href="#">
+                    <a>Contact</a>
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link href="#">
+                    <a>Privacy</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Disclaimer</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Login</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a>Signup</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </Container>
+        <Container>
+          <div className={styles.copyright}>
+            &copy; {year} —
+            <Link href="/" style={{ color: "black" }}>
+              <a> DevDemy </a>
+            </Link>
+          </div>
+        </Container>
+      </footer>
+    </>
   );
-}
+};
+
+export default Footer;

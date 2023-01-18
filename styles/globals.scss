@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 @import "./Variable.scss";
 
 html,
@@ -29,27 +31,54 @@ a {
 }
 
 /* Button Types */
+
+.sm-button {
+  font-size: 15px !important;
+  background-color: #3e39be;
+  height: 45px;
+  border-radius: 50px;
+  margin-top: 5px;
+  a {
+    color: white !important;
+  }
+}
+
+.red {
+  background-color: #c2303f;
+}
 .fill {
   background-color: $primary-color;
   color: #fff;
 
   &:hover {
-    background-color: rgb(0, 47, 165);
+    background-color: $primary-color-hover;
   }
   &:active,
   &:focus {
-    background-color: rgb(0, 39, 137);
+    background-color: $primary-color-hover;
+  }
+}
+.dark-fill {
+  background-color: #fff5e6;
+  color: black;
+
+  &:hover {
+    background-color: yellow;
+    outline-offset: 3px;
+    outline: 2px solid yellow;
   }
 }
 
 .outline {
-  color: rgb(0, 81, 195) !important;
+  color: white;
+  background-color: $primary-color;
+
   &:hover {
-    background-color: rgba(0, 55, 193, 0.219);
+    background-color: $primary-color-hover;
   }
   &:active,
   &:focus {
-    background-color: rgba(0, 55, 193, 0.39);
+    outline-color: #743fc7 !important;
   }
 }
 
@@ -77,4 +106,13 @@ a {
   font-size: 14px !important;
   text-align: left !important;
   padding-top: 5px !important;
+}
+
+.activeTab {
+  background-color: rgba(127, 172, 209, 0.237);
+}
+
+.bgBlue {
+  background-color: rgb(0, 51, 132) !important;
+  color: #fff !important;
 }

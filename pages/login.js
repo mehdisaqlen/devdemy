@@ -60,8 +60,8 @@ export default function login() {
             <a>
               <Image
                 src="/logo.svg"
-                width={70}
-                height={70}
+                width={140}
+                height={140}
                 alt="logo"
                 className={styles.svg}
               />

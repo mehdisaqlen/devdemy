@@ -14,7 +14,9 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 15px;
-
+      height: 40px;
+      overflow: hidden;
+      color: rgb(206, 210, 229);
       .svg {
         fill: $primary-color;
       }

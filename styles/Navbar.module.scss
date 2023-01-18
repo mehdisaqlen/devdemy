@@ -1,13 +1,16 @@
 @import "./Variable.scss";
 .navContainer {
   border-bottom: 1px solid rgb(228, 228, 228);
-  padding: 0px 15px;
+  padding: 0px 12px;
+  background-color: transparent;
+  overflow: hidden;
   .navbar {
     max-width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
+    font-family: "Fira Code", monospace;
 
     .brand {
       display: flex;
@@ -18,6 +21,7 @@
       color: $primary-color;
       font-size: 25px;
       padding: 12px 0px;
+      height: 62px;
     }
     ul {
       display: flex;
@@ -26,6 +30,8 @@
 
       li {
         list-style: none;
+        font-size: 15px;
+        color: black;
         a {
           display: block;
           padding: 15px 15px;

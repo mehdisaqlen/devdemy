@@ -1,15 +1,151 @@
 @import "./Variable.scss";
-.navContainer {
-  border-bottom: 1px solid rgb(228, 228, 228);
-  padding: 0px 15px;
-  background-color: rgb(237, 237, 237);
-  padding: 25px 0px;
-  .footer {
-    max-width: 1300px;
-    margin: 0px auto;
 
-    .link {
-      color: $primary-color;
+.footer {
+  font-weight: 500;
+  background-color: $primary-color-hover;
+  .gotoTop {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    border-bottom: 2px solid #eee;
+    display: none;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+  .footerBrand {
+    display: flex;
+    flex-direction: column;
+
+    .brand {
+      position: relative;
+      width: 100px;
+      height: 30px;
+      display: inline-block;
+      margin-bottom: 55px;
+      margin-top: -40px;
+
+      .logo {
+        fill: white;
+      }
+    }
+
+    .socialIcons {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      vertical-align: middle;
+    }
+    .socialIcons li {
+      list-style: none;
+      margin: 3px 0px;
+      font-weight: 500;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+    p {
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
+
+  .footerNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    .col {
+      h2 {
+        display: inline-block;
+        margin-bottom: 25px;
+        // color: #eee;
+        font-size: 18px;
+        color: rgb(224, 231, 241);
+        // font-family: $hero-font;
+      }
+    }
+    ul li {
+      list-style: none;
+      margin: 8px 0px;
+
+      a {
+        text-decoration: none;
+        color: rgb(210, 216, 224);
+        font-size: 15px;
+        transition: 0.1s all ease-in-out;
+        padding: 5px 10px;
+        border-radius: 8px;
+        position: relative;
+        left: -8px;
+        display: block;
+        font-weight: 500;
+
+        &:hover {
+          color: rgb(255, 182, 25);
+        }
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 0.5px solid rgb(29, 34, 45);
+    color: #eee;
+    font-size: 16px;
+    padding: 10px 0px 70px 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footerNav {
+    flex-direction: column;
+
+    .col {
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgb(228, 228, 228);
+    }
+
+    .footerBrand {
+      border-bottom: 1px solid rgb(228, 228, 228);
+      .brand {
+        display: block;
+        margin: auto auto;
+      }
+
+      .socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+
+        .label {
+          display: none;
+        }
+      }
+      .socialIcons li {
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .copyright {
+      padding: 0px 20px;
+      color: rgb(215, 226, 235);
+      a {
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }

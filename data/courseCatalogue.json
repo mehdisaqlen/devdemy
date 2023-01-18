@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/courses/hacking",
+    "title": "Ethical Hacking",
+    "category": "Cybersecurity",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/hacking",
+    "title": "Ethical Hacking",
+    "category": "Cybersecurity",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/hacking",
+    "title": "Ethical Hacking",
+    "category": "Cybersecurity",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/hacking",
+    "title": "Ethical Hacking",
+    "category": "Cybersecurity",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+
+  {
+    "path": "/courses/backend",
+    "title": "Learn Node.Js",
+    "category": "Backend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backed",
+    "title": "Learn Django",
+    "category": "Backend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Learn Ruby",
+    "category": "Backend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Learn Next.Js",
+    "category": "Backend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+
+  {
+    "path": "/courses/backend",
+    "title": "Learn React.JS",
+    "category": "Frontend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backed",
+    "title": "Learn HTML",
+    "category": "Frontend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Learn JavaScript",
+    "category": "Frontend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Learn Vue.Js",
+    "category": "Frontend",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+
+  {
+    "path": "/courses/backend",
+    "title": "AI Basics",
+    "category": "Machine Learning",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backed",
+    "title": "AI Modeling",
+    "category": "Machine Learning",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Deep Learning",
+    "category": "Machine Learning",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Python for ML",
+    "category": "Machine Learning",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+
+  {
+    "path": "/courses/backend",
+    "title": "Cloud Computing",
+    "category": "Data Science",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backed",
+    "title": "Data Analytics",
+    "category": "Data Science",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Google Cloud",
+    "category": "Data Science",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  },
+  {
+    "path": "/courses/backend",
+    "title": "Big Data",
+    "category": "Data Science",
+    "level": "Beginners Friendly",
+    "lessons": "22"
+  }
+]

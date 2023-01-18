@@ -23,15 +23,36 @@ export default function Footer() {
     <div className={styles.navContainer}>
       <div className={styles.navbar}>
         <div className={styles.brand}>
-          <Image src="/logo.svg" width="40" height="40" alt="Logo" />
-          <span>Devdemy</span>
+          <Link href="/">
+            <a>
+              <Image src="/logo.svg" width="120" height="120" alt="Logo" />
+            </a>
+          </Link>
         </div>
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a>Explore Courses</a>
             </Link>
           </li>
+          <li>
+            <Link href="/">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>Contact</a>
+            </Link>
+          </li>
+
+          <li
+            style={{
+              backgroundColor: "rgb(206, 210, 229)",
+              width: 0.5,
+              height: "25",
+            }}
+          ></li>
           {!token ? (
             <li>
               <Link href="/login">
@@ -39,14 +60,14 @@ export default function Footer() {
               </Link>
             </li>
           ) : (
-            <li onClick={logOut}>
+            <li onClick={logOut} className="sm-button red">
               <Link href="/">
                 <a>Sign out</a>
               </Link>
             </li>
           )}
           {!token ? (
-            <li>
+            <li className="sm-button">
               <Link href="/register">
                 <a>Register</a>
               </Link>

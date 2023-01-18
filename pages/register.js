@@ -50,19 +50,6 @@ export default function register() {
   return (
     <section className={styles.main} style={{ marginTop: -70 }}>
       <form action="/api/register" method="POST" className={styles.form}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <a>
-              <Image
-                src="/logo.svg"
-                width={70}
-                height={70}
-                alt="logo"
-                className={styles.svg}
-              />
-            </a>
-          </Link>
-        </div>
         <h1>Sign up a free account</h1>
         <p>Enter the details to create an account</p>
         <div className={styles.container}>

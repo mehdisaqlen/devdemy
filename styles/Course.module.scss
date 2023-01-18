@@ -1,0 +1,51 @@
+@import "./variable.scss";
+
+.coursePage {
+  text-align: center;
+
+  .header {
+    padding: 60px 0px;
+  }
+
+  .courseContainer {
+    background-color: rgb(230, 233, 240);
+    padding: 50px 0px;
+
+    .courseTabs {
+      margin-top: 12px;
+
+      ul {
+        width: fit-content;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(161, 118, 254);
+        padding: 10px 12px;
+        border-radius: 50px;
+
+        li {
+          list-style: none;
+          padding: 8px 15px;
+          border-radius: 50px;
+          cursor: pointer;
+          font-size: 15px;
+
+          &:hover {
+            background-color: rgba(127, 172, 209, 0.237);
+          }
+        }
+      }
+    }
+
+    .cardContainer {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+  }
+}

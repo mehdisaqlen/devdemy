@@ -1,36 +1,46 @@
+@import "./Variable.scss";
 .card {
-  width: 20rem;
-  background-color: white;
+  width: 100%;
   border-radius: 5px;
-  .teacherAvatar {
-    position: relative;
-    margin: -42px 0px 0px 20px;
-    width: 70px;
-    height: 70px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: -20px !important;
-    border-radius: 50%;
+  background-color: rgb(255, 255, 255);
 
-    .avatar {
-      border: 5px solid white;
-      border-radius: 50%;
+  .cardWrapper {
+    color: $primary-color !important;
+    padding: 15px 25px 0px 25px;
+    border-radius: 5px;
+    text-align: left;
+    overflow: hidden;
+    .header {
+      p {
+        font-family: "Fira Code", monospace;
+        font-size: 14px;
+        color: rgb(177, 118, 255);
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-family: "Fira Code", monospace;
+      }
+    }
+    .cardBody {
+      p {
+        font-size: 15px;
+        line-height: 21px !important;
+      }
+
+      .goButton {
+        float: right;
+        padding: 15px 0px;
+        font-size: 20px;
+        color: black;
+        margin-bottom: -8px;
+      }
     }
   }
 
-  .cardBody {
-    padding: 20px;
-
-    h3 {
-      font-size: 25px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 21px !important;
-      margin-bottom: 10px;
-    }
+  &:hover {
+    outline-offset: 3px;
+    outline: 2px solid rgb(161, 118, 254);
   }
 }

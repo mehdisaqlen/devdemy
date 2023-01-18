@@ -6,7 +6,7 @@ import connectToDatabase from "../../middleware/connectToDatabase";
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const { email, password } = req.body;
-    console.log(req.body);
+    // console.log(req.body);
     let user = await User.findOne({ email: email });
 
     if (user) {
