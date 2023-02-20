@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Login.module.scss";
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import Link from "next/link";
@@ -12,6 +12,7 @@ export default function login() {
   const [message, setMessage] = useState({ msg: "", type: "" });
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const togglePasswordShow = () => {
     setShowPassword(!showPassword);
@@ -35,12 +36,14 @@ export default function login() {
 
       if (response.success) {
         localStorage.setItem("token", response.token);
+        localStorage.setItem("isAuthenticated", true);
+        localStorage.setItem("LoggedIn", true);
+        setIsAuthenticated(localStorage.getItem("isAuthenticated"));
         setMessage({ msg: "Successfully logged in", type: "success" });
-        // console.log(response.token);
         setEmail("");
         setPassword("");
         setIsLoading(false);
-        router.push("/");
+        router.push("/dashboard");
       } else if (response.success == false) {
         setMessage({ msg: response.msg, type: "error" });
         router.push("/login");
@@ -52,6 +55,7 @@ export default function login() {
       setMessage({ msg: "All fields are required!", type: "error" });
     }
   };
+
   return (
     <section className={styles.main}>
       <form action="/api/login" method="POST" className={styles.form}>

@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Container from "../components/Container";
 import styles from "../styles/Course.module.scss";
-import allCourses from "../data/courseCatalogue.json";
+// import allCourses from "../data/courseCatalogue.json";
 import Card from "../components/Card";
+import Course from "../models/CourseSchema";
+import mongoose from "mongoose";
 
-function courses() {
+function courses({ allCourses }) {
+  const [course, setCourse] = useState("all");
   const [activeTab, setActiveTab] = useState("all");
   const handleTab0 = () => {
     setActiveTab("all");
@@ -25,21 +28,6 @@ function courses() {
     setActiveTab("Data Science");
   };
 
-  // const cybersecurity = allCourses.filter((course) => {
-  //   return course.category === "Cybersecurity";
-  // });
-  // const frontend = allCourses.filter((course) => {
-  //   return course.category === "Frontend";
-  // });
-  // const backend = allCourses.filter((course) => {
-  //   return course.category === "Backend";
-  // });
-  // const machineLearning = allCourses.filter((course) => {
-  //   return course.category === "Machine Learning";
-  // });
-  // const dataScience = allCourses.filter((course) => {
-  //   return course.category === "Data Science";
-  // });
   const catalogue =
     activeTab === "all"
       ? allCourses.filter((item) => {
@@ -49,8 +37,10 @@ function courses() {
           return item.category === activeTab;
         });
 
-  console.log("Catalogue.....");
-  console.log(catalogue);
+  useEffect(() => {
+    localStorage.setItem("AllCourses", JSON.stringify(allCourses));
+  }, []);
+
   return (
     <div className={styles.coursePage}>
       <Container>
@@ -107,7 +97,7 @@ function courses() {
               return (
                 <Card
                   key={item.id}
-                  path={item.path}
+                  path={"courses/" + item.slug}
                   category={item.category}
                   title={item.title}
                   level={item.level}
@@ -115,82 +105,22 @@ function courses() {
                 />
               );
             })}
-
-            {/* {activeTab === "tab1"
-              ? cybersecurity.map((item) => {
-                  return (
-                    <Card
-                      key={item.id}
-                      path={item.path}
-                      category={item.category}
-                      title={item.title}
-                      level={item.level}
-                      lessons={item.lessons}
-                    />
-                  );
-                })
-              : ""}
-            {activeTab === "tab2"
-              ? backend.map((item) => {
-                  return (
-                    <Card
-                      key={item.id}
-                      path={item.path}
-                      category={item.category}
-                      title={item.title}
-                      level={item.level}
-                      lessons={item.lessons}
-                    />
-                  );
-                })
-              : ""}
-            {activeTab === "tab3"
-              ? frontend.map((item) => {
-                  return (
-                    <Card
-                      key={item.id}
-                      path={item.path}
-                      category={item.category}
-                      title={item.title}
-                      level={item.level}
-                      lessons={item.lessons}
-                    />
-                  );
-                })
-              : ""}
-            {activeTab === "tab4"
-              ? machineLearning.map((item) => {
-                  return (
-                    <Card
-                      key={item.id}
-                      path={item.path}
-                      category={item.category}
-                      title={item.title}
-                      level={item.level}
-                      lessons={item.lessons}
-                    />
-                  );
-                })
-              : ""}
-            {activeTab === "tab5"
-              ? dataScience.map((item) => {
-                  return (
-                    <Card
-                      key={item.id}
-                      path={item.path}
-                      category={item.category}
-                      title={item.title}
-                      level={item.level}
-                      lessons={item.lessons}
-                    />
-                  );
-                })
-              : ""} */}
           </div>
         </Container>
       </section>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  if (!mongoose.connections[0].readyState) {
+    await mongoose.connect(process.env.MONGODB_URI);
+  }
+  let allCourses = await Course.find();
+
+  return {
+    props: { allCourses: JSON.parse(JSON.stringify(allCourses)) },
+  };
 }
 
 export default courses;

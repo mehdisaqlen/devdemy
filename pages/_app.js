@@ -8,10 +8,8 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    let token = localStorage.getItem("token");
-    if (token) {
-      setIsLoggedIn(true);
-      console.log("User is logged in");
+    let isAuthenticated = localStorage.getItem("isAuthenticated");
+    if (isAuthenticated) {
       if (router.pathname == "/login" || router.pathname == "/register") {
         router.push("/");
       }
