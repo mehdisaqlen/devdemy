@@ -1,56 +1,55 @@
 [
   {
-    "path": "/courses/hacking",
+    "path": "ethical-hacking",
     "title": "Ethical Hacking",
     "category": "Cybersecurity",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/hacking",
-    "title": "Ethical Hacking",
+    "path": "learn-kali-linux",
+    "title": "Learn Kali Linux",
     "category": "Cybersecurity",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "23"
   },
   {
-    "path": "/courses/hacking",
-    "title": "Ethical Hacking",
+    "path": "python-for-hackers",
+    "title": "Python For Hackers",
     "category": "Cybersecurity",
-    "level": "Beginners Friendly",
-    "lessons": "22"
+    "level": "Intermediate",
+    "lessons": "35"
   },
   {
-    "path": "/courses/hacking",
-    "title": "Ethical Hacking",
+    "path": "system-security",
+    "title": "System Security",
     "category": "Cybersecurity",
-    "level": "Beginners Friendly",
-    "lessons": "22"
+    "level": "Advance",
+    "lessons": "18"
   },
-
   {
-    "path": "/courses/backend",
+    "path": "learn-nodejs",
     "title": "Learn Node.Js",
     "category": "Backend",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "30"
   },
   {
-    "path": "/courses/backed",
+    "path": "learn-django",
     "title": "Learn Django",
     "category": "Backend",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "25"
   },
   {
-    "path": "/courses/backend",
+    "path": "learn-ruby",
     "title": "Learn Ruby",
     "category": "Backend",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backend",
+    "path": "learn-nextjs",
     "title": "Learn Next.Js",
     "category": "Backend",
     "level": "Beginners Friendly",
@@ -58,28 +57,28 @@
   },
 
   {
-    "path": "/courses/backend",
+    "path": "learn-react",
     "title": "Learn React.JS",
     "category": "Frontend",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backed",
+    "path": "learn-html",
     "title": "Learn HTML",
     "category": "Frontend",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backend",
+    "path": "learn-javascript",
     "title": "Learn JavaScript",
     "category": "Frontend",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backend",
+    "path": "learn-vuejs",
     "title": "Learn Vue.Js",
     "category": "Frontend",
     "level": "Beginners Friendly",
@@ -87,60 +86,60 @@
   },
 
   {
-    "path": "/courses/backend",
+    "path": "ai-basics",
     "title": "AI Basics",
     "category": "Machine Learning",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backed",
+    "path": "ai-modeling",
     "title": "AI Modeling",
     "category": "Machine Learning",
     "level": "Beginners Friendly",
     "lessons": "22"
   },
   {
-    "path": "/courses/backend",
+    "path": "deep-learning",
     "title": "Deep Learning",
     "category": "Machine Learning",
-    "level": "Beginners Friendly",
-    "lessons": "22"
+    "level": "Intermediate",
+    "lessons": "20"
   },
   {
-    "path": "/courses/backend",
+    "path": "python-for-ml",
     "title": "Python for ML",
     "category": "Machine Learning",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "25"
   },
 
   {
-    "path": "/courses/backend",
+    "path": "cloud-computing",
     "title": "Cloud Computing",
     "category": "Data Science",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "30"
   },
   {
-    "path": "/courses/backed",
+    "path": "data-analytics",
     "title": "Data Analytics",
     "category": "Data Science",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "25"
   },
   {
-    "path": "/courses/backend",
+    "path": "google-cloud",
     "title": "Google Cloud",
     "category": "Data Science",
     "level": "Beginners Friendly",
-    "lessons": "22"
+    "lessons": "20"
   },
   {
-    "path": "/courses/backend",
+    "path": "big-data",
     "title": "Big Data",
     "category": "Data Science",
-    "level": "Beginners Friendly",
-    "lessons": "22"
+    "level": "Intermediate",
+    "lessons": "15"
   }
 ]
