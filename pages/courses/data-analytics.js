@@ -17,14 +17,14 @@ function VUE() {
                 </Link>
                 ›
               </span>
-              <span> Learn AI</span>
+              <span> Data Analytics</span>
             </p>
-            <h1>Basics fo AI</h1>
+            <h1>Data Analytics</h1>
             <p>
-              AI is an extremely useful programing language for web pages
-              professionals because it can act as multitasking cybersecurity
-              functions, including malware analysis, scanning, and penetration
-              testing tasks.
+              Data Analytics is an extremely useful programing language for web
+              pages professionals because it can act as multitasking
+              cybersecurity functions, including malware analysis, scanning, and
+              penetration testing tasks.
             </p>
             <div style={{ display: "inline-block", marginTop: 35 }}>
               <Button url="#" title="Enroll For Free" type="dark-fill" />
@@ -35,7 +35,7 @@ function VUE() {
       <div className={styles.aboutSection}>
         <Container>
           <h2>Description</h2>
-          <p>Learn the basics of Ethical Hacking with Kali Linux.</p>
+          <p>Data Analytics.</p>
           <p>
             The goal of this course is to help you learn the basic fundamentals
             of hacking and to give you an introduction to becoming an ethical

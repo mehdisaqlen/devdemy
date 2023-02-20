@@ -4,7 +4,7 @@ import styles from "../../styles/coursePage.module.scss";
 import Button from "../../components/Button";
 import Link from "next/link";
 
-function VUE() {
+function KaliLinux() {
   return (
     <main className={styles.main}>
       <div className={styles.bg}>
@@ -17,11 +17,11 @@ function VUE() {
                 </Link>
                 ›
               </span>
-              <span> Learn AI</span>
+              <span> Learn HTML</span>
             </p>
-            <h1>Basics fo AI</h1>
+            <h1>Learn HTML</h1>
             <p>
-              AI is an extremely useful programing language for web pages
+              HTML is an extremely useful markup language for web pages
               professionals because it can act as multitasking cybersecurity
               functions, including malware analysis, scanning, and penetration
               testing tasks.
@@ -91,4 +91,4 @@ function VUE() {
   );
 }
 
-export default VUE;
+export default KaliLinux;

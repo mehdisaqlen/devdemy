@@ -4,7 +4,7 @@ import styles from "../../styles/coursePage.module.scss";
 import Button from "../../components/Button";
 import Link from "next/link";
 
-function VUE() {
+function KaliLinux() {
   return (
     <main className={styles.main}>
       <div className={styles.bg}>
@@ -17,14 +17,13 @@ function VUE() {
                 </Link>
                 ›
               </span>
-              <span> Learn AI</span>
+              <span> Learn Kali Linux</span>
             </p>
-            <h1>Basics fo AI</h1>
+            <h1>Learn Kali Linux</h1>
             <p>
-              AI is an extremely useful programing language for web pages
-              professionals because it can act as multitasking cybersecurity
-              functions, including malware analysis, scanning, and penetration
-              testing tasks.
+              Kali Linux is a Debian-derived Linux distribution designed for
+              digital forensics and penetration testing. It is maintained and
+              funded by Offensive Security.
             </p>
             <div style={{ display: "inline-block", marginTop: 35 }}>
               <Button url="#" title="Enroll For Free" type="dark-fill" />
@@ -91,4 +90,4 @@ function VUE() {
   );
 }
 
-export default VUE;
+export default KaliLinux;

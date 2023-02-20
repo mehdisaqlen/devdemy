@@ -17,11 +17,11 @@ function VUE() {
                 </Link>
                 ›
               </span>
-              <span> Learn AI</span>
+              <span> Learn Vue.JS</span>
             </p>
-            <h1>Basics fo AI</h1>
+            <h1>Learn Vue.JS</h1>
             <p>
-              AI is an extremely useful programing language for web pages
+              Vue.JS is an extremely useful programing language for web pages
               professionals because it can act as multitasking cybersecurity
               functions, including malware analysis, scanning, and penetration
               testing tasks.
