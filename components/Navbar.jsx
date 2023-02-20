@@ -6,17 +6,23 @@ import { useRouter } from "next/router";
 
 export default function Footer() {
   const [token, setToken] = useState("");
+  const [auth, setAuth] = useState("");
   const router = useRouter();
   useEffect(() => {
     let jwtToken = localStorage.getItem("token");
+    let the_auth = localStorage.getItem("isAuthenticated");
     if (jwtToken !== "") {
       setToken(jwtToken);
     }
+    setAuth(the_auth);
   }, router.query);
 
   const logOut = () => {
     localStorage.removeItem("token");
-    location.reload();
+    localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("name");
+    localStorage.setItem("LoggedIn", false);
+    window.location.href = "/";
   };
 
   return (
@@ -31,17 +37,17 @@ export default function Footer() {
         </div>
         <ul>
           <li>
-            <Link href="/">
+            <Link href="/courses">
               <a>Explore Courses</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/about">
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>
@@ -53,7 +59,7 @@ export default function Footer() {
               height: "25",
             }}
           ></li>
-          {!token ? (
+          {!auth ? (
             <li>
               <Link href="/login">
                 <a>Login</a>
@@ -61,12 +67,12 @@ export default function Footer() {
             </li>
           ) : (
             <li onClick={logOut} className="sm-button red">
-              <Link href="/">
+              <Link href="#">
                 <a>Sign out</a>
               </Link>
             </li>
           )}
-          {!token ? (
+          {!auth ? (
             <li className="sm-button">
               <Link href="/register">
                 <a>Register</a>

@@ -27,7 +27,7 @@ const Footer = () => {
 
                 <ul className={styles.socialIcons}>
                   <li>
-                    <Link href="https://www.facebook.com/wirelogs">
+                    <Link href="#">
                       <a>
                         <Image
                           src={"/images/icons/facebook.svg"}
@@ -116,18 +116,13 @@ const Footer = () => {
               <h2>Information</h2>
               <ul>
                 <li>
-                  <Link href="#">
+                  <Link href="/contact">
                     <a>Contact</a>
                   </Link>
                 </li>{" "}
                 <li>
-                  <Link href="#">
+                  <Link href="/privacy">
                     <a>Privacy</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <a>Disclaimer</a>
                   </Link>
                 </li>
                 <li>
