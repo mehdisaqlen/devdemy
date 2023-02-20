@@ -6,7 +6,7 @@ import connectToDatabase from "../../middleware/connectToDatabase";
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const { email, password } = req.body;
-    // console.log(req.body);
+
     let user = await User.findOne({ email: email });
 
     if (user) {
@@ -14,11 +14,15 @@ const handler = async (req, res) => {
       let decryptedPass = bytes.toString(CryptoJS.enc.Utf8);
       if (email === user.email && password === decryptedPass) {
         const token = jwt.sign(
-          { email: user.email, name: user.name },
+          {
+            email: user.email,
+            name: user.name,
+            id: user._id,
+          },
           "jwt-secret"
         );
         res.status(200).json({ success: true, token });
-        res.redirect("/");
+        res.redirect("/dashboard");
       } else {
         res.status(200).json({ success: false, msg: "Invalid credentials" });
         res.redirect("/login");
