@@ -116,3 +116,57 @@ a {
   background-color: rgb(0, 51, 132) !important;
   color: #fff !important;
 }
+
+.active-link {
+  color: rgb(28, 27, 35);
+  border-left: 5px solid black !important;
+  background-color: rgba(22, 24, 28, 0.13);
+}
+
+.btn {
+  padding: 14px 22px;
+  font-family: inherit;
+  font-size: 15px !important;
+  font-family: inherit;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s all ease-in-out;
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 3px solid $primary-color;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    cursor: default;
+  }
+}
+
+.normal-div {
+  padding: 20px 0px;
+  line-height: 35px;
+
+  p,
+  ul,
+  li {
+    font-size: 18px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    margin: 15px 0px;
+  }
+}
