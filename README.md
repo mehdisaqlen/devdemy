@@ -2,8 +2,6 @@
 
 # Devdemy - Free Coding Courses
 
-v1.0.0 - Final Delivery Phase (BC190205829, Saqlen Raza Mehdi)
-
 Devdemy is an online academy built for developers specifically. This project is built with nextjs technology.
 
 ## Getting Started
